@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hangman/widgets/number_button.dart';
+import 'package:flutter_fluff/widgets/number_button.dart';
 
 void main() {
   runApp(const MyApp());
