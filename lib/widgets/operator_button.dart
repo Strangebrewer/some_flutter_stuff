@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 
 class OperatorButton extends StatelessWidget {
-  final String buttonText;
+  final IconData icon;
   final Function handler;
 
-  const OperatorButton(this.buttonText, this.handler, {Key? key})
-      : super(key: key);
+  const OperatorButton(this.icon, this.handler, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,12 +14,12 @@ class OperatorButton extends StatelessWidget {
         height: 50,
         width: 50,
         child: ElevatedButton(
-          onPressed: handler(),
+          onPressed: () => handler(icon),
           style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all(Colors.white),
             foregroundColor: MaterialStateProperty.all(Colors.black),
           ),
-          child: Text(buttonText),
+          child: Icon(icon),
         ),
       ),
     );
