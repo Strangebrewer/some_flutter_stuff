@@ -1,4 +1,4 @@
-# hangman
+# Flutter Stuff
 
 A new Flutter project.
 
